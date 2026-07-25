@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Registro de clientes de Prime Nexus">
+    <meta name="author" content="Fredy Leonel Morales Albizures">
+
+    <title>Prime Nexus | Registro</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Prime Nexus</h1>
+        <p>Registro de nuevos clientes</p>
+
+        <hr>
+
+        <nav>
+            <a href="index.html">Inicio</a> |
+            <a href="productos.html">Productos</a> |
+            <a href="carrito.html">Carrito</a> |
+            <a href="iniciar-sesion.html">Iniciar sesión</a> |
+            <a href="registro.html">Registrarse</a> |
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <hr>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Crear una cuenta</h2>
+
+            <p>
+                Completa el formulario para registrarte como cliente
+                de Prime Nexus.
+            </p>
+
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Información personal</legend>
+
+                    <p>
+                        <label for="nombres">Nombres:</label>
+                        <input
+                            type="text"
+                            id="nombres"
+                            name="nombres"
+                            autocomplete="given-name"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="apellidos">Apellidos:</label>
+                        <input
+                            type="text"
+                            id="apellidos"
+                            name="apellidos"
+                            autocomplete="family-name"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="fecha-nacimiento">
+                            Fecha de nacimiento:
+                        </label>
+
+                        <input
+                            type="date"
+                            id="fecha-nacimiento"
+                            name="fecha_nacimiento"
+                            required
+                        >
+                    </p>
+
+                    <p>Género:</p>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="masculino"
+                            name="genero"
+                            value="masculino"
+                        >
+                        <label for="masculino">Masculino</label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="femenino"
+                            name="genero"
+                            value="femenino"
+                        >
+                        <label for="femenino">Femenino</label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="no-indicar"
+                            name="genero"
+                            value="no-indicar"
+                        >
+                        <label for="no-indicar">
+                            Prefiero no indicarlo
+                        </label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Datos de contacto</legend>
+
+                    <p>
+                        <label for="correo">Correo electrónico:</label>
+                        <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            autocomplete="email"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="telefono">Número de teléfono:</label>
+                        <input
+                            type="tel"
+                            id="telefono"
+                            name="telefono"
+                            placeholder="5555-5555"
+                            autocomplete="tel"
+                            required
+                        >
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Dirección</legend>
+
+                    <p>
+                        <label for="departamento">Departamento:</label>
+
+                        <select
+                            id="departamento"
+                            name="departamento"
+                            required
+                        >
+                            <option value="">Seleccione una opción</option>
+                            <option value="guatemala">Guatemala</option>
+                            <option value="sacatepequez">Sacatepéquez</option>
+                            <option value="chimaltenango">Chimaltenango</option>
+                            <option value="escuintla">Escuintla</option>
+                            <option value="quetzaltenango">Quetzaltenango</option>
+                            <option value="alta-verapaz">Alta Verapaz</option>
+                            <option value="otro">Otro departamento</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="municipio">Municipio:</label>
+                        <input
+                            type="text"
+                            id="municipio"
+                            name="municipio"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="zona">Zona:</label>
+                        <input
+                            type="number"
+                            id="zona"
+                            name="zona"
+                            min="1"
+                            max="25"
+                        >
+                    </p>
+
+                    <p>
+                        <label for="direccion">
+                            Dirección completa:
+                        </label>
+                        <br>
+                        <textarea
+                            id="direccion"
+                            name="direccion"
+                            rows="4"
+                            cols="50"
+                            required
+                        ></textarea>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Seguridad de la cuenta</legend>
+
+                    <p>
+                        <label for="contrasena">Contraseña:</label>
+                        <input
+                            type="password"
+                            id="contrasena"
+                            name="contrasena"
+                            minlength="8"
+                            autocomplete="new-password"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="confirmar-contrasena">
+                            Confirmar contraseña:
+                        </label>
+
+                        <input
+                            type="password"
+                            id="confirmar-contrasena"
+                            name="confirmar_contrasena"
+                            minlength="8"
+                            autocomplete="new-password"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        La contraseña debe tener como mínimo ocho caracteres.
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferencias</legend>
+
+                    <p>
+                        <label for="categoria-preferida">
+                            Categoría preferida:
+                        </label>
+
+                        <select
+                            id="categoria-preferida"
+                            name="categoria_preferida"
+                        >
+                            <option value="">Seleccione una categoría</option>
+                            <option value="computadoras">Computadoras</option>
+                            <option value="celulares">Celulares</option>
+                            <option value="accesorios">Accesorios</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="recibir-promociones"
+                            name="recibir_promociones"
+                        >
+                        <label for="recibir-promociones">
+                            Deseo recibir promociones por correo electrónico.
+                        </label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="aceptar-terminos"
+                            name="aceptar_terminos"
+                            required
+                        >
+                        <label for="aceptar-terminos">
+                            Acepto los términos y condiciones.
+                        </label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="aceptar-privacidad"
+                            name="aceptar_privacidad"
+                            required
+                        >
+                        <label for="aceptar-privacidad">
+                            Acepto la política de privacidad.
+                        </label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Crear cuenta</button>
+                    <button type="reset">Limpiar formulario</button>
+                </p>
+
+            </form>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>¿Ya tienes una cuenta?</h2>
+            <p>
+                Puedes ingresar utilizando tu correo electrónico y contraseña.
+            </p>
+
+            <a href="iniciar-sesion.html">Iniciar sesión</a>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Prime Nexus. Todos los derechos reservados.</p>
+        <p>
+            Página desarrollada por:
+            <strong>Fredy Leonel Morales Albizures</strong>
+        </p>
+        <p>
+            Número de carnet:
+            <strong>9490-23-16408</strong>
+        </p>
+
+        <nav>
+            <a href="index.html">Inicio</a> |
+            <a href="productos.html">Productos</a> |
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </footer>
+
+</body>
+</html>

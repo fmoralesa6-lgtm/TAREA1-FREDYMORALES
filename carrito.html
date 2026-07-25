@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carrito de compras de Prime Nexus">
+    <meta name="author" content="Fredy Leonel Morales Albizures">
+
+    <title>Prime Nexus | Carrito de compras</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Prime Nexus</h1>
+        <p>Carrito de compras</p>
+
+        <hr>
+
+        <nav>
+            <a href="index.html">Inicio</a> |
+            <a href="productos.html">Productos</a> |
+            <a href="carrito.html">Carrito</a> |
+            <a href="iniciar-sesion.html">Iniciar sesión</a> |
+            <a href="registro.html">Registrarse</a> |
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <hr>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Productos agregados</h2>
+
+            <form action="#" method="post">
+
+                <table border="1">
+                    <caption>Resumen del carrito de compras</caption>
+
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Descripción</th>
+                            <th>Precio unitario</th>
+                            <th>Cantidad</th>
+                            <th>Subtotal</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img
+                                    src="https://i.ebayimg.com/images/g/DIQAAeSwz-BqXPPg/s-l1200.webp"
+                                    alt="Laptop profesional"
+                                    width="149"
+                                    height="112"
+                                >
+                            </td>
+
+                            <td>
+                                <strong>Laptop Profesional</strong>
+                                <p>Color: Negro</p>
+                                <p>Código: LAP-001</p>
+                            </td>
+
+                            <td>Q7,499.00</td>
+
+                            <td>
+                                <label for="cantidad-laptop">
+                                    Cantidad:
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="cantidad-laptop"
+                                    name="cantidad_laptop"
+                                    min="1"
+                                    max="15"
+                                    value="1"
+                                >
+                            </td>
+
+                            <td>Q7,499.00</td>
+
+                            <td>
+                                <button
+                                    type="submit"
+                                    name="accion"
+                                    value="eliminar-laptop"
+                                >
+                                    Eliminar
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img
+                                    src="https://ishop.gt/cdn/shop/files/IMG-15335699.jpg?v=1730310111&width=823"
+                                    alt="Mouse inalámbrico"
+                                    width="149"
+                                    height="112"
+                                >
+                            </td>
+
+                            <td>
+                                <strong>Mouse inalámbrico</strong>
+                                <p>Color: Negro</p>
+                                <p>Código: MOU-001</p>
+                            </td>
+
+                            <td>Q249.00</td>
+
+                            <td>
+                                <label for="cantidad-mouse">
+                                    Cantidad:
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="cantidad-mouse"
+                                    name="cantidad_mouse"
+                                    min="1"
+                                    max="20"
+                                    value="1"
+                                >
+                            </td>
+
+                            <td>Q249.00</td>
+
+                            <td>
+                                <button
+                                    type="submit"
+                                    name="accion"
+                                    value="eliminar-mouse"
+                                >
+                                    Eliminar
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <th colspan="4">Subtotal</th>
+                            <td colspan="2">Q7,748.00</td>
+                        </tr>
+
+                        <tr>
+                            <th colspan="4">Envío</th>
+                            <td colspan="2">Q50.00</td>
+                        </tr>
+
+                        <tr>
+                            <th colspan="4">Total</th>
+                            <td colspan="2">
+                                <strong>Q7,798.00</strong>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <p>
+                    <button type="submit">Actualizar carrito</button>
+                    <button type="reset">Restablecer cantidades</button>
+                </p>
+            </form>
+
+            <p>
+                <a href="productos.html">Continuar comprando</a>
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Código de descuento</h2>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Aplicar cupón</legend>
+
+                    <p>
+                        <label for="cupon">Código:</label>
+                        <input
+                            type="text"
+                            id="cupon"
+                            name="cupon"
+                            placeholder="Ingrese su código"
+                        >
+                    </p>
+
+                    <button type="submit">Aplicar descuento</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Información para completar la compra</h2>
+
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Datos personales</legend>
+
+                    <p>
+                        <label for="nombre">Nombre completo:</label>
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="correo">Correo electrónico:</label>
+                        <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="telefono">Teléfono:</label>
+                        <input
+                            type="tel"
+                            id="telefono"
+                            name="telefono"
+                            placeholder="5555-5555"
+                            required
+                        >
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Dirección de entrega</legend>
+
+                    <p>
+                        <label for="departamento">Departamento:</label>
+                        <select
+                            id="departamento"
+                            name="departamento"
+                            required
+                        >
+                            <option value="">Seleccione un departamento</option>
+                            <option value="guatemala">Guatemala</option>
+                            <option value="sacatepequez">Sacatepéquez</option>
+                            <option value="escuintla">Escuintla</option>
+                            <option value="chimaltenango">Chimaltenango</option>
+                            <option value="quetzaltenango">Quetzaltenango</option>
+                            <option value="alta-verapaz">Alta Verapaz</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="municipio">Municipio:</label>
+                        <input
+                            type="text"
+                            id="municipio"
+                            name="municipio"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="direccion">Dirección completa:</label>
+                        <br>
+                        <textarea
+                            id="direccion"
+                            name="direccion"
+                            rows="4"
+                            cols="50"
+                            required
+                        ></textarea>
+                    </p>
+
+                    <p>
+                        <label for="referencia">Referencia:</label>
+                        <br>
+                        <textarea
+                            id="referencia"
+                            name="referencia"
+                            rows="3"
+                            cols="50"
+                        ></textarea>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Método de entrega</legend>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="envio-domicilio"
+                            name="metodo_entrega"
+                            value="domicilio"
+                            required
+                        >
+                        <label for="envio-domicilio">
+                            Envío a domicilio
+                        </label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="recoger-tienda"
+                            name="metodo_entrega"
+                            value="tienda"
+                        >
+                        <label for="recoger-tienda">
+                            Recoger en tienda
+                        </label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Método de pago</legend>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="tarjeta"
+                            name="metodo_pago"
+                            value="tarjeta"
+                            required
+                        >
+                        <label for="tarjeta">
+                            Tarjeta de crédito o débito
+                        </label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="transferencia"
+                            name="metodo_pago"
+                            value="transferencia"
+                        >
+                        <label for="transferencia">
+                            Transferencia bancaria
+                        </label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="radio"
+                            id="efectivo"
+                            name="metodo_pago"
+                            value="efectivo"
+                        >
+                        <label for="efectivo">
+                            Pago contra entrega
+                        </label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Confirmación</legend>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="aceptar-terminos"
+                            name="aceptar_terminos"
+                            required
+                        >
+                        <label for="aceptar-terminos">
+                            Acepto los términos y condiciones de compra.
+                        </label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="confirmar-datos"
+                            name="confirmar_datos"
+                            required
+                        >
+                        <label for="confirmar-datos">
+                            Confirmo que los datos ingresados son correctos.
+                        </label>
+                    </p>
+
+                    <button type="submit">Confirmar compra</button>
+                </fieldset>
+
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Prime Nexus. Todos los derechos reservados.</p>
+        <p>
+            Página desarrollada por:
+            <strong>Fredy Leonel Morales Albizures</strong>
+        </p>
+        <p>
+            Número de carnet:
+            <strong>9490-23-16408</strong>
+        </p>
+
+        <nav>
+            <a href="index.html">Inicio</a> |
+            <a href="productos.html">Productos</a> |
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </footer>
+
+</body>
+</html>

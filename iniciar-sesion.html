@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Registro de clientes de Prime Nexus">
+    <meta name="author" content="Fredy Leonel Morales Albizures">
+
+    <title>Prime Nexus | Registrarse</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Prime Nexus</h1>
+        <p>Registro de nuevos clientes</p>
+
+        <hr>
+
+        <nav>
+            <a href="index.html">Inicio</a> |
+            <a href="productos.html">Productos</a> |
+            <a href="carrito.html">Carrito</a> |
+            <a href="iniciar-sesion.html">Iniciar sesión</a> |
+            <a href="registro.html">Registrarse</a> |
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <hr>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Iniciar sesión</h2>
+
+            <p>
+                Ingresa tu correo electrónico y contraseña para acceder
+                a tu cuenta.
+            </p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Datos de acceso</legend>
+
+                    <p>
+                        <label for="correo">Correo electrónico:</label>
+                        <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            placeholder="cliente@correo.com"
+                            autocomplete="email"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="contrasena">Contraseña:</label>
+                        <input
+                            type="password"
+                            id="contrasena"
+                            name="contrasena"
+                            minlength="8"
+                            autocomplete="current-password"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="recordar"
+                            name="recordar"
+                        >
+                        <label for="recordar">
+                            Mantener la sesión iniciada
+                        </label>
+                    </p>
+
+                    <button type="submit">Iniciar sesión</button>
+                    <button type="reset">Limpiar</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>¿Olvidaste tu contraseña?</h2>
+
+            <p>
+                Ingresa tu correo electrónico para solicitar instrucciones
+                de recuperación.
+            </p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Recuperar contraseña</legend>
+
+                    <p>
+                        <label for="correo-recuperacion">
+                            Correo electrónico:
+                        </label>
+
+                        <input
+                            type="email"
+                            id="correo-recuperacion"
+                            name="correo_recuperacion"
+                            required
+                        >
+                    </p>
+
+                    <button type="submit">
+                        Solicitar recuperación
+                    </button>
+                </fieldset>
+            </form>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>¿Todavía no tienes una cuenta?</h2>
+
+            <p>
+                Regístrate para guardar tus datos y consultar tus compras.
+            </p>
+
+            <a href="registro.html">Crear una cuenta</a>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Prime Nexus. Todos los derechos reservados.</p>
+        <p>
+            Página desarrollada por:
+            <strong>Fredy Leonel Morales Albizures</strong>
+        </p>
+        <p>
+            Número de carnet:
+            <strong>9490-23-16408
+            </strong>
+        </p>
+
+        <nav>
+            <a href="index.html">Inicio</a> |
+            <a href="productos.html">Productos</a> |
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </footer>
+
+</body>
+</html>

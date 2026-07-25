@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda en línea Prime Nexus">
+    <meta name="keywords" content="tecnología, computadoras, celulares, accesorios">
+    <meta name="author" content="Fredy Leonel Morales Albizures">
+
+    <title>Prime Nexus | Inicio</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Prime Nexus</h1>
+        <p>Tu tienda de tecnología en línea</p>
+
+        <form action="#" method="get">
+            <label for="buscar">Buscar productos:</label>
+            <input
+                type="search"
+                id="buscar"
+                name="buscar"
+                placeholder="Escribe el nombre del producto"
+            >
+            <button type="submit">Buscar</button>
+        </form>
+
+        <hr>
+
+        <nav>
+            <a href="index.html">Inicio</a> |
+            <a href="productos.html">Productos</a> |
+            <a href="carrito.html">Carrito</a> |
+            <a href="iniciar-sesion.html">Iniciar sesión</a> |
+            <a href="registro.html">Registrarse</a> |
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <hr>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Bienvenido a Prime Nexus</h2>
+
+            <p>
+                En Prime Nexus encontrarás computadoras, celulares,
+                accesorios y diferentes productos tecnológicos.
+            </p>
+
+            <p>
+                Nuestro objetivo es ofrecer productos de buena calidad,
+                información clara y una experiencia de compra sencilla.
+            </p>
+
+            <a href="productos.html">Ver todos los productos</a>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Categorías principales</h2>
+
+            <article>
+                <h3>Computadoras</h3>
+                <p>
+                    Encuentra computadoras portátiles y equipos para estudio,
+                    trabajo o entretenimiento.
+                </p>
+                <a href="productos.html#computadoras">Ver computadoras</a>
+            </article>
+
+            <article>
+                <h3>Celulares</h3>
+                <p>
+                    Conoce nuestros teléfonos inteligentes y dispositivos móviles.
+                </p>
+                <a href="productos.html#celulares">Ver celulares</a>
+            </article>
+
+            <article>
+                <h3>Accesorios</h3>
+                <p>
+                    Compra teclados, mouse, audífonos, monitores y otros accesorios.
+                </p>
+                <a href="productos.html#accesorios">Ver accesorios</a>
+            </article>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Productos destacados</h2>
+
+            <article>
+                <h3>Laptop Profesional</h3>
+
+                <figure>
+                    <img
+                        src="imagenes/laptop.jpg"
+                        alt="Laptop profesional"
+                        width="300"
+                        height="200"
+                    >
+                    <figcaption>Laptop para estudio y trabajo.</figcaption>
+                </figure>
+
+                <p>Precio: Q7,499.00</p>
+                <p>Disponibilidad: En existencia</p>
+
+                <a href="detalle-producto.html">Ver detalles</a>
+            </article>
+
+            <hr>
+
+            <article>
+                <h3>Teléfono inteligente</h3>
+
+                <figure>
+                    <img
+                        src="imagenes/celular.jpg"
+                        alt="Teléfono inteligente"
+                        width="300"
+                        height="200"
+                    >
+                    <figcaption>Teléfono inteligente de última generación.</figcaption>
+                </figure>
+
+                <p>Precio: Q4,999.00</p>
+                <p>Disponibilidad: En existencia</p>
+
+                <a href="detalle-producto.html">Ver detalles</a>
+            </article>
+
+            <hr>
+
+            <article>
+                <h3>Audífonos inalámbricos</h3>
+
+                <figure>
+                    <img
+                        src="imagenes/audifonos.jpg"
+                        alt="Audífonos inalámbricos"
+                        width="300"
+                        height="200"
+                    >
+                    <figcaption>Audífonos con conexión inalámbrica.</figcaption>
+                </figure>
+
+                <p>Precio: Q599.00</p>
+                <p>Disponibilidad: En existencia</p>
+
+                <a href="detalle-producto.html">Ver detalles</a>
+            </article>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Beneficios de comprar con nosotros</h2>
+
+            <ul>
+                <li>Productos tecnológicos de diferentes categorías.</li>
+                <li>Información detallada de cada producto.</li>
+                <li>Proceso de compra sencillo.</li>
+                <li>Formulario de contacto para consultas.</li>
+                <li>Registro de nuevos clientes.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Suscríbete a nuestras novedades</h2>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Boletín informativo</legend>
+
+                    <p>
+                        <label for="nombre-suscripcion">Nombre:</label>
+                        <input
+                            type="text"
+                            id="nombre-suscripcion"
+                            name="nombre_suscripcion"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="correo-suscripcion">Correo electrónico:</label>
+                        <input
+                            type="email"
+                            id="correo-suscripcion"
+                            name="correo_suscripcion"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="aceptar-novedades"
+                            name="aceptar_novedades"
+                            required
+                        >
+                        <label for="aceptar-novedades">
+                            Deseo recibir noticias y promociones.
+                        </label>
+                    </p>
+
+                    <button type="submit">Suscribirme</button>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Prime Nexus. Todos los derechos reservados.</p>
+        <p>
+            Página desarrollada por:
+            <strong>Fredy Leonel Morales Albizures</strong>
+        </p>
+        <p>
+            Número de carnet:
+            <strong>9490-23-16408</strong>
+        </p>
+
+        <nav>
+            <a href="index.html">Inicio</a> |
+            <a href="productos.html">Productos</a> |
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </footer>
+
+</body>
+</html>

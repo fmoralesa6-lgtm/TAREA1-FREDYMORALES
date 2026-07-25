@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detalle de producto de Prime Nexus">
+    <meta name="author" content="Fredy Leonel Morales Albizures">
+
+    <title>Prime Nexus | Detalle del producto</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Prime Nexus</h1>
+        <p>Información del producto</p>
+
+        <hr>
+
+        <nav>
+            <a href="index.html">Inicio</a> |
+            <a href="productos.html">Productos</a> |
+            <a href="carrito.html">Carrito</a> |
+            <a href="iniciar-sesion.html">Iniciar sesión</a> |
+            <a href="registro.html">Registrarse</a> |
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <hr>
+    </header>
+
+    <main>
+
+        <p>
+            <a href="index.html">Inicio</a> &gt;
+            <a href="productos.html">Productos</a> &gt;
+            Laptop Profesional
+        </p>
+
+        <article>
+            <header>
+                <h2>Laptop Profesional</h2>
+                <p>Código del producto: LAP-001</p>
+            </header>
+
+            <figure>
+                <img
+                    src="https://i.ebayimg.com/images/g/DIQAAeSwz-BqXPPg/s-l1200.webp"
+                    alt="Vista principal de la laptop profesional"
+                    width="500"
+                    height="350"
+                >
+                <figcaption>Imagen principal del producto.</figcaption>
+            </figure>
+
+            <section>
+                <h3>Descripción</h3>
+
+                <p>
+                    Laptop diseñada para estudiantes, profesionales y usuarios
+                    que necesitan realizar múltiples actividades.
+                </p>
+
+                <p>
+                    El equipo puede utilizarse para navegación web, creación de
+                    documentos, programación, videoconferencias y reproducción
+                    de contenido multimedia.
+                </p>
+            </section>
+
+            <section>
+                <h3>Características principales</h3>
+
+                <ul>
+                    <li>Procesador de alto rendimiento</li>
+                    <li>Memoria RAM de 16 GB</li>
+                    <li>Unidad SSD de 512 GB</li>
+                    <li>Pantalla de 15.6 pulgadas</li>
+                    <li>Cámara web integrada</li>
+                    <li>Conexión inalámbrica</li>
+                    <li>Puertos USB y HDMI</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Especificaciones técnicas</h3>
+
+                <table border="1">
+                    <caption>Especificaciones de la laptop</caption>
+
+                    <thead>
+                        <tr>
+                            <th>Característica</th>
+                            <th>Descripción</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th>Procesador</th>
+                            <td>Procesador de ocho núcleos</td>
+                        </tr>
+
+                        <tr>
+                            <th>Memoria RAM</th>
+                            <td>16 GB</td>
+                        </tr>
+
+                        <tr>
+                            <th>Almacenamiento</th>
+                            <td>SSD de 512 GB</td>
+                        </tr>
+
+                        <tr>
+                            <th>Pantalla</th>
+                            <td>15.6 pulgadas</td>
+                        </tr>
+
+                        <tr>
+                            <th>Resolución</th>
+                            <td>1920 x 1080 píxeles</td>
+                        </tr>
+
+                        <tr>
+                            <th>Sistema operativo</th>
+                            <td>Sistema operativo de 64 bits</td>
+                        </tr>
+
+                        <tr>
+                            <th>Garantía</th>
+                            <td>12 meses</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h3>Precio y disponibilidad</h3>
+
+                <p><strong>Precio: Q7,499.00</strong></p>
+                <p>Existencia disponible: 15 unidades</p>
+                <p>Estado del producto: Nuevo</p>
+            </section>
+
+            <section>
+                <h3>Seleccionar producto</h3>
+
+                <form action="carrito.html" method="get">
+                    <fieldset>
+                        <legend>Opciones de compra</legend>
+
+                        <input
+                            type="hidden"
+                            name="producto"
+                            value="laptop-profesional"
+                        >
+
+                        <p>
+                            <label for="color">Color:</label>
+                            <select id="color" name="color" required>
+                                <option value="">Seleccione un color</option>
+                                <option value="negro">Negro</option>
+                                <option value="gris">Gris</option>
+                                <option value="plateado">Plateado</option>
+                            </select>
+                        </p>
+
+                        <p>
+                            <label for="cantidad">Cantidad:</label>
+                            <input
+                                type="number"
+                                id="cantidad"
+                                name="cantidad"
+                                min="1"
+                                max="15"
+                                value="1"
+                                required
+                            >
+                        </p>
+
+                        <p>
+                            <label for="garantia">Garantía adicional:</label>
+                            <select id="garantia" name="garantia">
+                                <option value="sin-garantia">
+                                    No agregar garantía adicional
+                                </option>
+                                <option value="un-anio">
+                                    Agregar un año adicional
+                                </option>
+                                <option value="dos-anios">
+                                    Agregar dos años adicionales
+                                </option>
+                            </select>
+                        </p>
+
+                        <button type="submit">Agregar al carrito</button>
+                    </fieldset>
+                </form>
+            </section>
+        </article>
+
+        <hr>
+
+        <section>
+            <h2>Opiniones de clientes</h2>
+
+            <article>
+                <h3>Excelente computadora</h3>
+                <p><strong>Cliente:</strong>Aleyda Sandoval</p>
+                <p><strong>Calificación:</strong> 5 de 5</p>
+                <p>
+                    La computadora funciona correctamente y es apropiada
+                    para realizar trabajos universitarios.
+                </p>
+            </article>
+
+            <article>
+                <h3>Buen rendimiento</h3>
+                <p><strong>Cliente:</strong>Meredith Gonzalez</p>
+                <p><strong>Calificación:</strong> 4 de 5</p>
+                <p>
+                    El equipo tiene buen rendimiento y suficiente almacenamiento.
+                </p>
+            </article>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Escribir una opinión</h2>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Formulario de opinión</legend>
+
+                    <p>
+                        <label for="nombre-opinion">Nombre:</label>
+                        <input
+                            type="text"
+                            id="nombre-opinion"
+                            name="nombre_opinion"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="correo-opinion">Correo electrónico:</label>
+                        <input
+                            type="email"
+                            id="correo-opinion"
+                            name="correo_opinion"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="calificacion">Calificación:</label>
+                        <select
+                            id="calificacion"
+                            name="calificacion"
+                            required
+                        >
+                            <option value="">Seleccione una calificación</option>
+                            <option value="1">1 estrella</option>
+                            <option value="2">2 estrellas</option>
+                            <option value="3">3 estrellas</option>
+                            <option value="4">4 estrellas</option>
+                            <option value="5">5 estrellas</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="titulo-opinion">Título de la opinión:</label>
+                        <input
+                            type="text"
+                            id="titulo-opinion"
+                            name="titulo_opinion"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="comentario-opinion">Comentario:</label>
+                        <br>
+                        <textarea
+                            id="comentario-opinion"
+                            name="comentario_opinion"
+                            rows="6"
+                            cols="50"
+                            required
+                        ></textarea>
+                    </p>
+
+                    <button type="submit">Enviar opinión</button>
+                    <button type="reset">Limpiar</button>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Prime Nexus. Todos los derechos reservados.</p>
+        <p>
+            Página desarrollada por:
+            <strong>Fredy Leonel Morales Albizures</strong>
+        </p>
+        <p>
+            Número de carnet:
+            <strong>9490-23-16408</strong>
+        </p>
+
+        <nav>
+            <a href="index.html">Inicio</a> |
+            <a href="productos.html">Productos</a> |
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </footer>
+
+</body>
+</html>

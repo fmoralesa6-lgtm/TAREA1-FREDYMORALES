@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de contacto de Prime Nexus">
+    <meta name="author" content="Fredy Leonel Morales Albizures">
+
+    <title>Prime Nexus | Contacto</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Prime Nexus</h1>
+        <p>Servicio y atención al cliente</p>
+
+        <hr>
+
+        <nav>
+            <a href="index.html">Inicio</a> |
+            <a href="productos.html">Productos</a> |
+            <a href="carrito.html">Carrito</a> |
+            <a href="iniciar-sesion.html">Iniciar sesión</a> |
+            <a href="registro.html">Registrarse</a> |
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <hr>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Contáctanos</h2>
+
+            <p>
+                Utiliza el siguiente formulario para enviar tus consultas,
+                sugerencias o comentarios.
+            </p>
+
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Información del cliente</legend>
+
+                    <p>
+                        <label for="nombre">Nombre completo:</label>
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="correo">Correo electrónico:</label>
+                        <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="telefono">Teléfono:</label>
+                        <input
+                            type="tel"
+                            id="telefono"
+                            name="telefono"
+                            placeholder="5555-5555"
+                        >
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Información de la consulta</legend>
+
+                    <p>
+                        <label for="tipo-consulta">
+                            Tipo de consulta:
+                        </label>
+
+                        <select
+                            id="tipo-consulta"
+                            name="tipo_consulta"
+                            required
+                        >
+                            <option value="">
+                                Seleccione una opción
+                            </option>
+                            <option value="producto">
+                                Información de un producto
+                            </option>
+                            <option value="compra">
+                                Consulta sobre una compra
+                            </option>
+                            <option value="envio">
+                                Consulta sobre un envío
+                            </option>
+                            <option value="garantia">
+                                Garantía
+                            </option>
+                            <option value="devolucion">
+                                Cambio o devolución
+                            </option>
+                            <option value="sugerencia">
+                                Sugerencia
+                            </option>
+                            <option value="otro">
+                                Otro asunto
+                            </option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="numero-pedido">
+                            Número de pedido:
+                        </label>
+
+                        <input
+                            type="text"
+                            id="numero-pedido"
+                            name="numero_pedido"
+                            placeholder="Opcional"
+                        >
+                    </p>
+
+                    <p>
+                        <label for="asunto">Asunto:</label>
+                        <input
+                            type="text"
+                            id="asunto"
+                            name="asunto"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="mensaje">Mensaje:</label>
+                        <br>
+                        <textarea
+                            id="mensaje"
+                            name="mensaje"
+                            rows="8"
+                            cols="60"
+                            placeholder="Escriba los detalles de su consulta"
+                            required
+                        ></textarea>
+                    </p>
+
+                    <p>
+                        <label for="archivo">
+                            Adjuntar documento o imagen:
+                        </label>
+
+                        <input
+                            type="file"
+                            id="archivo"
+                            name="archivo"
+                            accept=".jpg,.jpeg,.png,.pdf"
+                        >
+                    </p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="copia-correo"
+                            name="copia_correo"
+                        >
+                        <label for="copia-correo">
+                            Deseo recibir una copia del mensaje.
+                        </label>
+                    </p>
+
+                    <p>
+                        <input
+                            type="checkbox"
+                            id="datos-correctos"
+                            name="datos_correctos"
+                            required
+                        >
+                        <label for="datos-correctos">
+                            Confirmo que la información es correcta.
+                        </label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Enviar consulta</button>
+                    <button type="reset">Limpiar formulario</button>
+                </p>
+
+            </form>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Información de contacto</h2>
+
+            <address>
+                <p>
+                    <strong>TecnoMarket Guatemala</strong>
+                </p>
+
+                <p>
+                    Dirección: Ciudad de Guatemala, Guatemala
+                </p>
+
+                <p>
+                    Teléfono:
+                    <a href="tel:+50222223333">
+                        +502 2222-3333
+                    </a>
+                </p>
+
+                <p>
+                    Correo electrónico:
+                    <a href="mailto:contacto@tecnomarket.com">
+                        contacto@tecnomarket.com
+                    </a>
+                </p>
+            </address>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Horarios de atención</h2>
+
+            <table border="1">
+                <caption>Horario de servicio al cliente</caption>
+
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Lunes a viernes</td>
+                        <td>8:00 a 18:00 horas</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sábado</td>
+                        <td>9:00 a 14:00 horas</td>
+                    </tr>
+
+                    <tr>
+                        <td>Domingo</td>
+                        <td>Cerrado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Preguntas frecuentes</h2>
+
+            <details>
+                <summary>¿Realizan entregas a domicilio?</summary>
+                <p>
+                    Sí, realizamos entregas en diferentes departamentos
+                    de Guatemala.
+                </p>
+            </details>
+
+            <details>
+                <summary>¿Los productos tienen garantía?</summary>
+                <p>
+                    Los productos cuentan con garantía según las condiciones
+                    indicadas en la descripción.
+                </p>
+            </details>
+
+            <details>
+                <summary>¿Puedo solicitar un cambio?</summary>
+                <p>
+                    Los cambios están sujetos a revisión del producto y a las
+                    políticas de la tienda.
+                </p>
+            </details>
+
+            <details>
+                <summary>¿Qué métodos de pago aceptan?</summary>
+                <p>
+                    Se puede seleccionar tarjeta, transferencia bancaria
+                    o pago contra entrega.
+                </p>
+            </details>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Prime Nexus. Todos los derechos reservados.</p>
+        <p>
+            Página desarrollada por:
+            <strong>Fredy Leonel Morales Albizures</strong>
+        </p>
+        <p>
+            Número de carnet:
+            <strong>9490-23-16408</strong>
+        </p>
+
+        <nav>
+            <a href="index.html">Inicio</a> |
+            <a href="productos.html">Productos</a> |
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </footer>
+
+</body>
+</html>
