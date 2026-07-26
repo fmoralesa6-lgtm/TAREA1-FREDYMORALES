@@ -3,17 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Registro de clientes de Prime Nexus">
+    <meta name="description" content="Catálogo de productos de Prime Nexus">
     <meta name="author" content="Fredy Leonel Morales Albizures">
 
-    <title>Prime Nexus | Registro</title>
+    <title>Prime Nexus | Productos</title>
 </head>
 
 <body>
 
     <header>
         <h1>Prime Nexus</h1>
-        <p>Registro de nuevos clientes</p>
+        <p>Catálogo de productos</p>
+
+        <form action="#" method="get">
+            <label for="buscar-producto">Buscar productos:</label>
+            <input
+                type="search"
+                id="buscar-producto"
+                name="buscar_producto"
+                placeholder="Ejemplo: laptop"
+            >
+            <button type="submit">Buscar</button>
+        </form>
 
         <hr>
 
@@ -32,221 +43,16 @@
     <main>
 
         <section>
-            <h2>Crear una cuenta</h2>
+            <h2>Filtrar productos</h2>
 
-            <p>
-                Completa el formulario para registrarte como cliente
-                de Prime Nexus.
-            </p>
-
-            <form action="#" method="post">
-
+            <form action="#" method="get">
                 <fieldset>
-                    <legend>Información personal</legend>
+                    <legend>Opciones de búsqueda</legend>
 
                     <p>
-                        <label for="nombres">Nombres:</label>
-                        <input
-                            type="text"
-                            id="nombres"
-                            name="nombres"
-                            autocomplete="given-name"
-                            required
-                        >
-                    </p>
-
-                    <p>
-                        <label for="apellidos">Apellidos:</label>
-                        <input
-                            type="text"
-                            id="apellidos"
-                            name="apellidos"
-                            autocomplete="family-name"
-                            required
-                        >
-                    </p>
-
-                    <p>
-                        <label for="fecha-nacimiento">
-                            Fecha de nacimiento:
-                        </label>
-
-                        <input
-                            type="date"
-                            id="fecha-nacimiento"
-                            name="fecha_nacimiento"
-                            required
-                        >
-                    </p>
-
-                    <p>Género:</p>
-
-                    <p>
-                        <input
-                            type="radio"
-                            id="masculino"
-                            name="genero"
-                            value="masculino"
-                        >
-                        <label for="masculino">Masculino</label>
-                    </p>
-
-                    <p>
-                        <input
-                            type="radio"
-                            id="femenino"
-                            name="genero"
-                            value="femenino"
-                        >
-                        <label for="femenino">Femenino</label>
-                    </p>
-
-                    <p>
-                        <input
-                            type="radio"
-                            id="no-indicar"
-                            name="genero"
-                            value="no-indicar"
-                        >
-                        <label for="no-indicar">
-                            Prefiero no indicarlo
-                        </label>
-                    </p>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Datos de contacto</legend>
-
-                    <p>
-                        <label for="correo">Correo electrónico:</label>
-                        <input
-                            type="email"
-                            id="correo"
-                            name="correo"
-                            autocomplete="email"
-                            required
-                        >
-                    </p>
-
-                    <p>
-                        <label for="telefono">Número de teléfono:</label>
-                        <input
-                            type="tel"
-                            id="telefono"
-                            name="telefono"
-                            placeholder="5555-5555"
-                            autocomplete="tel"
-                            required
-                        >
-                    </p>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Dirección</legend>
-
-                    <p>
-                        <label for="departamento">Departamento:</label>
-
-                        <select
-                            id="departamento"
-                            name="departamento"
-                            required
-                        >
-                            <option value="">Seleccione una opción</option>
-                            <option value="guatemala">Guatemala</option>
-                            <option value="sacatepequez">Sacatepéquez</option>
-                            <option value="chimaltenango">Chimaltenango</option>
-                            <option value="escuintla">Escuintla</option>
-                            <option value="quetzaltenango">Quetzaltenango</option>
-                            <option value="alta-verapaz">Alta Verapaz</option>
-                            <option value="otro">Otro departamento</option>
-                        </select>
-                    </p>
-
-                    <p>
-                        <label for="municipio">Municipio:</label>
-                        <input
-                            type="text"
-                            id="municipio"
-                            name="municipio"
-                            required
-                        >
-                    </p>
-
-                    <p>
-                        <label for="zona">Zona:</label>
-                        <input
-                            type="number"
-                            id="zona"
-                            name="zona"
-                            min="1"
-                            max="25"
-                        >
-                    </p>
-
-                    <p>
-                        <label for="direccion">
-                            Dirección completa:
-                        </label>
-                        <br>
-                        <textarea
-                            id="direccion"
-                            name="direccion"
-                            rows="4"
-                            cols="50"
-                            required
-                        ></textarea>
-                    </p>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Seguridad de la cuenta</legend>
-
-                    <p>
-                        <label for="contrasena">Contraseña:</label>
-                        <input
-                            type="password"
-                            id="contrasena"
-                            name="contrasena"
-                            minlength="8"
-                            autocomplete="new-password"
-                            required
-                        >
-                    </p>
-
-                    <p>
-                        <label for="confirmar-contrasena">
-                            Confirmar contraseña:
-                        </label>
-
-                        <input
-                            type="password"
-                            id="confirmar-contrasena"
-                            name="confirmar_contrasena"
-                            minlength="8"
-                            autocomplete="new-password"
-                            required
-                        >
-                    </p>
-
-                    <p>
-                        La contraseña debe tener como mínimo ocho caracteres.
-                    </p>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Preferencias</legend>
-
-                    <p>
-                        <label for="categoria-preferida">
-                            Categoría preferida:
-                        </label>
-
-                        <select
-                            id="categoria-preferida"
-                            name="categoria_preferida"
-                        >
-                            <option value="">Seleccione una categoría</option>
+                        <label for="categoria">Categoría:</label>
+                        <select id="categoria" name="categoria">
+                            <option value="">Todas las categorías</option>
                             <option value="computadoras">Computadoras</option>
                             <option value="celulares">Celulares</option>
                             <option value="accesorios">Accesorios</option>
@@ -254,58 +60,298 @@
                     </p>
 
                     <p>
+                        <label for="precio-minimo">Precio mínimo:</label>
                         <input
-                            type="checkbox"
-                            id="recibir-promociones"
-                            name="recibir_promociones"
+                            type="number"
+                            id="precio-minimo"
+                            name="precio_minimo"
+                            min="0"
+                            step="0.01"
                         >
-                        <label for="recibir-promociones">
-                            Deseo recibir promociones por correo electrónico.
-                        </label>
                     </p>
 
                     <p>
+                        <label for="precio-maximo">Precio máximo:</label>
                         <input
-                            type="checkbox"
-                            id="aceptar-terminos"
-                            name="aceptar_terminos"
-                            required
+                            type="number"
+                            id="precio-maximo"
+                            name="precio_maximo"
+                            min="0"
+                            step="0.01"
                         >
-                        <label for="aceptar-terminos">
-                            Acepto los términos y condiciones.
-                        </label>
                     </p>
 
                     <p>
-                        <input
-                            type="checkbox"
-                            id="aceptar-privacidad"
-                            name="aceptar_privacidad"
-                            required
-                        >
-                        <label for="aceptar-privacidad">
-                            Acepto la política de privacidad.
-                        </label>
+                        <label for="ordenar">Ordenar por:</label>
+                        <select id="ordenar" name="ordenar">
+                            <option value="nombre">Nombre</option>
+                            <option value="menor-precio">Menor precio</option>
+                            <option value="mayor-precio">Mayor precio</option>
+                            <option value="disponibilidad">Disponibilidad</option>
+                        </select>
                     </p>
+
+                    <button type="submit">Aplicar filtros</button>
+                    <button type="reset">Limpiar filtros</button>
                 </fieldset>
-
-                <p>
-                    <button type="submit">Crear cuenta</button>
-                    <button type="reset">Limpiar formulario</button>
-                </p>
-
             </form>
         </section>
 
         <hr>
 
-        <section>
-            <h2>¿Ya tienes una cuenta?</h2>
-            <p>
-                Puedes ingresar utilizando tu correo electrónico y contraseña.
-            </p>
+        <section id="computadoras">
+            <h2>Computadoras</h2>
 
-            <a href="iniciar-sesion.html">Iniciar sesión</a>
+            <article>
+                <h3>Laptop Profesional</h3>
+
+                <img
+                    src="https://i.ebayimg.com/images/g/DIQAAeSwz-BqXPPg/s-l1200.webp"
+                    alt="Laptop profesional"
+                    width="300"
+                    height="200"
+                >
+
+                <p>
+                    Laptop apropiada para estudiantes, profesionales y usuarios
+                    que necesitan un equipo de alto rendimiento.
+                </p>
+
+                <ul>
+                    <li>Procesador de alto rendimiento</li>
+                    <li>16 GB de memoria RAM</li>
+                    <li>Almacenamiento SSD de 512 GB</li>
+                    <li>Pantalla de 15.6 pulgadas</li>
+                </ul>
+
+                <p><strong>Precio: Q7,499.00</strong></p>
+                <p>Estado: Disponible</p>
+
+                <a href="detalle-producto.html">Ver detalles</a>
+
+                <form action="carrito.html" method="get">
+                    <input type="hidden" name="producto" value="laptop-profesional">
+
+                    <label for="cantidad-laptop">Cantidad:</label>
+                    <input
+                        type="number"
+                        id="cantidad-laptop"
+                        name="cantidad"
+                        min="1"
+                        max="10"
+                        value="1"
+                    >
+
+                    <button type="submit">Agregar al carrito</button>
+                </form>
+            </article>
+        </section>
+
+        <hr>
+
+        <section id="celulares">
+            <h2>Celulares</h2>
+
+            <article>
+                <h3>Teléfono inteligente</h3>
+
+                <img
+                    src="https://agenciasway.com.gt/wp-content/uploads/2025/10/iPhone-17-Pro-MAX-Azul-intenso.jpg"
+                    alt="Teléfono inteligente"
+                    width="300"
+                    height="200"
+                >
+
+                <p>
+                    Teléfono inteligente con cámara de alta resolución,
+                    amplio almacenamiento y conexión de alta velocidad.
+                </p>
+
+                <ul>
+                    <li>Pantalla de 6.5 pulgadas</li>
+                    <li>128 GB de almacenamiento</li>
+                    <li>Cámara trasera de alta resolución</li>
+                    <li>Batería de larga duración</li>
+                </ul>
+
+                <p><strong>Precio: Q4,999.00</strong></p>
+                <p>Estado: Disponible</p>
+
+                <a href="detalle-producto.html">Ver detalles</a>
+
+                <form action="carrito.html" method="get">
+                    <input type="hidden" name="producto" value="telefono-inteligente">
+
+                    <label for="cantidad-celular">Cantidad:</label>
+                    <input
+                        type="number"
+                        id="cantidad-celular"
+                        name="cantidad"
+                        min="1"
+                        max="10"
+                        value="1"
+                    >
+
+                    <button type="submit">Agregar al carrito</button>
+                </form>
+            </article>
+        </section>
+
+        <hr>
+
+        <section id="accesorios">
+            <h2>Accesorios</h2>
+
+            <article>
+                <h3>Audífonos inalámbricos</h3>
+
+                <img
+                    src="https://ishop.gt/cdn/shop/files/IMG-18068726_m_jpeg_1.jpg?v=1757449901&width=1445"
+                    alt="Audífonos inalámbricos"
+                    width="300"
+                    height="200"
+                >
+
+                <p>
+                    Audífonos inalámbricos con micrófono integrado y batería
+                    recargable.
+                </p>
+
+                <p><strong>Precio: Q599.00</strong></p>
+                <p>Estado: Disponible</p>
+
+                <a href="detalle-producto.html">Ver detalles</a>
+
+                <form action="carrito.html" method="get">
+                    <input type="hidden" name="producto" value="audifonos">
+
+                    <label for="cantidad-audifonos">Cantidad:</label>
+                    <input
+                        type="number"
+                        id="cantidad-audifonos"
+                        name="cantidad"
+                        min="1"
+                        max="10"
+                        value="1"
+                    >
+
+                    <button type="submit">Agregar al carrito</button>
+                </form>
+            </article>
+
+            <hr>
+
+            <article>
+                <h3>Teclado mecánico</h3>
+
+                <img
+                    src="https://istore.gt/wp-content/uploads/2023/06/ART0042571.jpg"
+                    alt="Teclado mecánico"
+                    width="300"
+                    height="200"
+                >
+
+                <p>
+                    Teclado mecánico con distribución en español y conexión USB.
+                </p>
+
+                <p><strong>Precio: Q649.00</strong></p>
+                <p>Estado: Disponible</p>
+
+                <a href="detalle-producto.html">Ver detalles</a>
+
+                <form action="carrito.html" method="get">
+                    <input type="hidden" name="producto" value="teclado-mecanico">
+
+                    <label for="cantidad-teclado">Cantidad:</label>
+                    <input
+                        type="number"
+                        id="cantidad-teclado"
+                        name="cantidad"
+                        min="1"
+                        max="10"
+                        value="1"
+                    >
+
+                    <button type="submit">Agregar al carrito</button>
+                </form>
+            </article>
+
+            <hr>
+
+            <article>
+                <h3>Mouse inalámbrico</h3>
+
+                <img
+                    src="https://ishop.gt/cdn/shop/files/IMG-15335699.jpg?v=1730310111&width=823"
+                    alt="Mouse inalámbrico"
+                    width="300"
+                    height="200"
+                >
+
+                <p>
+                    Mouse inalámbrico ergonómico con receptor USB.
+                </p>
+
+                <p><strong>Precio: Q249.00</strong></p>
+                <p>Estado: Disponible</p>
+
+                <a href="detalle-producto.html">Ver detalles</a>
+
+                <form action="carrito.html" method="get">
+                    <input type="hidden" name="producto" value="mouse-inalambrico">
+
+                    <label for="cantidad-mouse">Cantidad:</label>
+                    <input
+                        type="number"
+                        id="cantidad-mouse"
+                        name="cantidad"
+                        min="1"
+                        max="10"
+                        value="1"
+                    >
+
+                    <button type="submit">Agregar al carrito</button>
+                </form>
+            </article>
+
+            <hr>
+
+            <article>
+                <h3>Monitor de 24 pulgadas</h3>
+
+                <img
+                    src="https://img.pacifiko.com/PROD/resize/1/500x500/B09V3HMZW5.jpg"
+                    alt="Monitor de 24 pulgadas"
+                    width="300"
+                    height="200"
+                >
+
+                <p>
+                    Monitor de alta definición para trabajo, estudio y entretenimiento.
+                </p>
+
+                <p><strong>Precio: Q1,899.00</strong></p>
+                <p>Estado: Disponible</p>
+
+                <a href="detalle-producto.html">Ver detalles</a>
+
+                <form action="carrito.html" method="get">
+                    <input type="hidden" name="producto" value="monitor">
+
+                    <label for="cantidad-monitor">Cantidad:</label>
+                    <input
+                        type="number"
+                        id="cantidad-monitor"
+                        name="cantidad"
+                        min="1"
+                        max="10"
+                        value="1"
+                    >
+
+                    <button type="submit">Agregar al carrito</button>
+                </form>
+            </article>
         </section>
 
     </main>
@@ -319,7 +365,6 @@
             <strong>Fredy Leonel Morales Albizures</strong>
              <strong>y Mauricio Isai Perez Saban</strong>
         </p>
-
         <nav>
             <a href="index.html">Inicio</a> |
             <a href="productos.html">Productos</a> |
